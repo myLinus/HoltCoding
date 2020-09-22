@@ -10,7 +10,7 @@ client.once('ready', () => {
 client.on('message', message => {
 
     // refys shit show af en if-statement
-    if (message.content === '$refy_is_a_godlike_developer' ) {
+    if (message.content === `${prefix}refy_is_a_godlike_developer` ) {
         message.channel.send('I swear to Allah. Only people bored enough to read the source code should know this..')
     }
 
