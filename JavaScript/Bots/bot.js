@@ -6,6 +6,9 @@ client.once('ready', () => {
     console.log('Ready!');
 });
 
-
+//besked lytter /s 
+client.on('message', message => {
+    console.log(message.content);
+});
 // login på Discord
 client.login(config.token)
