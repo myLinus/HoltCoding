@@ -7,4 +7,5 @@ client.once('ready', () => {
 });
 
 
-client.login(config.token);
+// login på Discord
+client.login(config.token)
