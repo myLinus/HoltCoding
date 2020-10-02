@@ -10,7 +10,7 @@ client.once('ready', () => {
 
 //besked lytter /s 
 client.on('message', message => {
-    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
 
     // refys shit show af en if-statement
     if (message.content === `${prefix}refy_is_a_godlike_developer` ) {
