@@ -12,6 +12,9 @@ client.once('ready', () => {
 client.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
 
+    const args = message.content.slice(prefix.length).trim().split(/ +/);
+    const command = args.shift().toLowerCase();
+
     // refys shit show af en if-statement
     if (message.content === `${prefix}refy_is_a_godlike_developer` ) {
         message.channel.send('I swear to Allah. Only people bored enough to read the source code should know this..')
