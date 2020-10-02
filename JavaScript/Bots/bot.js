@@ -16,7 +16,7 @@ client.on('message', message => {
     const command = args.shift().toLowerCase();
 
     // refys shit show af en if-statement
-    if (message.content === `${prefix}refy_is_a_godlike_developer` ) {
+    if (command === `refy_is_a_godlike_developer` ) {
         message.channel.send('I swear to Allah. Only people bored enough to read the source code should know this..')
         sleep(2000)
         message.channel.send(`But .. I guess you are just a really bored person, ${message.author}`)
